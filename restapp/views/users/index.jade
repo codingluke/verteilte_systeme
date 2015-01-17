@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  h1 Users
+  div
+    each user in users
+      span= user.name
+      span= user.age
+      span= user.born_at
+
