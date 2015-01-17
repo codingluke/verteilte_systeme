@@ -1,0 +1,18 @@
+{
+  "name": "jsraft",
+  "version": "1.0.0",
+  "description": "little Raft example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argh": "0.1.x",
+    "axon": "2.0.x",
+    "diagnostics": "0.0.x",
+    "nanomsg": "0.2.x",
+    "liferaft": "0.1.0"
+  }
+}
