@@ -27,6 +27,12 @@ Das Package für die Tests, "mocha", muss evt. global installiert werden.
     npm install -g mocha
 ```
 
+## Express
+Das Beispiel wurde mit hilfe des WebFrameworks ExpressJs umgesetzt. Infos über ExpressJs gibt es hier: http://expressjs.com/
+
+## Mongoose
+Die MongoDB wird mit Hilfe das Package mongoose gemacht: http://mongoosejs.com/
+
 ## Tests laufen lassen.
 ```bash
     mocha
