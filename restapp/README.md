@@ -16,13 +16,12 @@ MongoDB kann einfach über die Konsole installiert werden.
 MongoDB muss auf dem default port 27017 configuriert sein und eine db test enthalten
 
 ## installieren der dependencies.
-Nun da npm installiert ist, muss man einfach im verzeichnis wo auch die Datei 'package.json' liegt folgenden Befehl ausführen.
+Um die dependencies zu installieren muss man im Verzeichnis wo auch die Datei 'package.json' liegt, folgenden Befehl ausführen.
 
 ```bash
     npm install
 ```
-Nun werden alle benötigten nodejs packages heruntergeladen und installiert.
-das Package für die tests "mocha", muss evt. global installiert werden.
+Das Package für die Tests, "mocha", muss evt. global installiert werden.
 
 ```bash
     npm install -g mocha
@@ -32,6 +31,7 @@ das Package für die tests "mocha", muss evt. global installiert werden.
 ```bash
     mocha
 ```
+Die Test sollte alle grün durchlaufen. Wenn sie Fehlschlagen, sollte die Datenbankverbindung überprüft werden.
 ## Starten des servers
 ```bash
     npm start
@@ -40,9 +40,9 @@ Dann sollte der Service unter "localhost:3000" zur verfügung stehen.
 
 **Es sind momentan folgende Resourcen vorhanden:**
 
-**Get** /users
-**Post** /users
-**Get** /users/:id
-**Put** /users/:id
-**Delete** /users/:id
+- **Get** /users
+- **Post** /users
+- **Get** /users/:id
+- **Put** /users/:id
+- **Delete** /users/:id
 
