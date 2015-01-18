@@ -41,5 +41,5 @@ resultate der Election sonder die gesamte Kommunikation.
 ```
 
 ## Quellen
-Liferaft in nodejs: https://github.com/unshiftio/liferaft
-Gute Infos und grafische Simulation https://raftconsensus.github.io/
+- Liferaft in nodejs: https://github.com/unshiftio/liferaft
+- Gute Infos und grafische Simulation https://raftconsensus.github.io/
