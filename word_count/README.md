@@ -23,48 +23,47 @@ Es ist zu beachten das dem Kompiler das flag "-target 1.6" mitgegeben wird. Die 
 Die Dateien befinden sich unter dem ordern "src", es muss zusätzlich die library "ext/hadoop-0.18.0-core.jar" angegeben werden.
 
 ## Ausführen des Jobs auf Hadoop
-1. Virtuelle Machine starten.
-2. Eigenen Ordner in der VM erstellen
+- Virtuelle Machine starten.
+- Eigenen Ordner in der VM erstellen
 
 ```bash
     mkdir meine_jobs
 ```
 
-3. word_count.jar und kant.txt hochladen
+-  word_count.jar und kant.txt hochladen
 
 ```bash
     scp word_count.jar -r hadoop-user@192.168.224.128:~/meine_jobs/word_count.jar
     scp kant.txt -r hadoop-user@192.168.224.128:~/meine_jobs/kant.txt
 ```
 
-4. Hadoop Starten
+-  Hadoop Starten
 
 ```bash
     ./start-hadoop
 ```
 
-4. kant.txt in Hadoop HDFS kopieren
+- kant.txt in Hadoop HDFS kopieren
 
 ```bash
     hadoop dfs -mkdir /user/hadoop-user/input
     hadoop dfs -mkdir /user/hadoop-user/output
     hadoop dfs -put meine_jobs/kant.txt /user/hadoop-user/input
 ```
-
-5. word_count.jar auf Hadoop ausführen
+- word_count.jar auf Hadoop ausführen
 
 ```bash
     hadoop jar meine_jobs/word_count.jar WordCount /user/hadoop-user/input /user/hadoop-user/output
 ```
 
-6. Output anschauen.
+- Output anschauen.
 
 ```bash
     hadoop dfs -ls /user/hadoop-user/output
     hadoop dfs -cat /user/hadoop-user/output/part-00000
 ```
 
-7. Output aus HDFS nach lokale Machine kopieren.
+- Output aus HDFS nach lokale Machine kopieren.
 
 ```bash
     hadoop dfs -get /user/hadoop-user/output/part-00000 meine_jobs/part-00000
