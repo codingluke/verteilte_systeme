@@ -3,6 +3,18 @@ Hier habe ich mit Hilfe eines in JavaScript implementieren RAFT Algorithmus, ein
 kleinen Cluster, welcher nichts anderes macht als ständig eine election durch
 zu führen. Es können nodes hinzugefügt oder entfernt werden ohne dass Fehler auftreten.
 
+## Prerequisites
+
+- NodeJS
+- npm (Node Package Manager)
+
+Es gibt mehrere Möglichkeiten Node und npm zu installieren. Hier eine Link dazu: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server
+
+Danach müssen noch die verwendeten Packete installiert werden mit:
+```bash
+    npm install
+```
+
 ## Den Cluster starten
 In diesem Beispiel werden nicht mehr als 6 nodes zugelassen. Auch wurden feste IPs von 8081 - 8086 dafür vorgesehen.
 Die einzelnen Nodes können folgendermassen (in einzelnen Terminals) gestartet werden.
@@ -27,3 +39,7 @@ resultate der Election sonder die gesamte Kommunikation.
   DEBUG=* node index.js --port 8085
   DEBUG=* node index.js --port 8086
 ```
+
+## Quellen
+Liferaft in nodejs: https://github.com/unshiftio/liferaft
+Gute Infos und grafische Simulation https://raftconsensus.github.io/
