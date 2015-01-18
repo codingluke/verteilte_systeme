@@ -13,9 +13,6 @@ var users = require('./routes/users');
 var app = express();
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/test');
-mongoose.connection.once('connected', function() {
-    console.log("habe connection");
-});
 
 
 // view engine setup
