@@ -3,13 +3,14 @@
 ## Hadoop Installation
 Dieses Beispiel folgt einem Tutorial von Yahoo, wofür eine virtuelle Machine auf Basis von vmware zur verfügung gestellt wird. Die auf der virtuellen Machine vorinstallierte Hadoop version ist die nummer 0.18.0, also bereits eine ältere.
 
-Tutorial: https://developer.yahoo.com/hadoop/tutorial/module3.html
-Virtuelle Machine: http://ydn.zenfs.com/site/hadoop/hadoop-vm-appliance-0-18-0_v1.zip
-VMware Player: http://www.vmware.com/pdf/vmware_player250.pdf
+- Tutorial: https://developer.yahoo.com/hadoop/tutorial/module3.html
+- Virtuelle Machine: http://ydn.zenfs.com/site/hadoop/hadoop-vm-appliance-0-18-0_v1.zip
+- VMware Player: http://www.vmware.com/pdf/vmware_player250.pdf
 
 **Benutzer**
-vm-user: hadoop-user
-vm-passwort: hadoop
+
+- vm-user: hadoop-user
+- vm-passwort: hadoop
 
 **Dateien auf vm kopieren**
 ```bash
